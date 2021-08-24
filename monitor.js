@@ -36,7 +36,7 @@ async function checkStock() {
 
     // Assemble fetch headers
     const headers = new fetch.Headers();
-    headers.append('User-Agent', 'Monitor/0.1.1 API Monitor');
+    headers.append(`User-Agent', 'Monitor/${data.version} API Monitor`);
     headers.append('x-employment', `Hi, I'd like a job in a CS field. My name is Reece, contact me at ZXJycHJAdWJ5enFudXkudmI=`)
     headers.append('Accept', '/*/');
     headers.append('Connection', 'keep-alive');
@@ -45,7 +45,7 @@ async function checkStock() {
     for (const store of data.stores) {
 
         // Set user agent per call? might assure my calls get thru to other stores indepedently idk
-        headers.set('User-Agent', `Monitor/0.1.1 API Monitor of ${stores.name}/${store.id}`)
+        headers.set('User-Agent', `Monitor/${data.version} API Monitor of ${store.name}/${store.id}`)
 
         // URL nonsense
         const url = `https://www.bestbuy.com/api/tcfb/model.json?paths=%5B%5B%22shop%22%2C%22buttonstate%22%2C%22v5%22%2C%22item%22%2C%22consolidated%22%2C%22skus%22%2C%5B${skuInsert}%5D%2C%22conditions%22%2C%22NONE%22%2C%22destinationZipCode%22%2C${store.zip}%2C%22storeId%22%2C${store.id}%2C%22context%22%2C%5B%22%2520%22%2C%22package-deals-carousel%22%5D%2C%22addAll%22%2C%22false%22%2C%22consolidated%22%2C%22true%22%2C%22consolidatedButtonState%22%2C%5B%22buttonState%22%2C%22displayText%22%5D%5D%5D&method=get`
