@@ -20,7 +20,7 @@ const mailer = nodemailer.createTransport({
 
 /** LOAD DATA IN FROM monitor.json */
 
-const raw = fs.readFileSync(path.resolve('./monitor.json'), 'utf-8');
+const raw = fs.readFileSync(path.resolve(__dirname, 'monitor.json'), 'utf-8');
 const data = JSON.parse(raw);
 
 // Log data
