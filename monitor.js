@@ -39,7 +39,7 @@ async function checkStock() {
 
     // Assemble fetch headers
     const headers = new fetch.Headers();
-    headers.append(`User-Agent', 'Monitor/${data.version} API Monitor`);
+    headers.append('User-Agent', `Monitor/${data.version} API Monitor`);
     headers.append('x-employment', `Hi, I'd like a job in a CS field. My name is Reece, contact me at ZXJycHJAdWJ5enFudXkudmI=`)
     headers.append('Accept', '/*/');
     headers.append('Connection', 'keep-alive');
