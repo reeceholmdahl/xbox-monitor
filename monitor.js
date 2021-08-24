@@ -29,6 +29,9 @@ console.log(data);
 // Last email time for debug
 let lastEmailTime = -1;
 
+/**
+ * Function to check best buy stock
+ */
 async function checkStock() {
 
     // Build SKU url insert from
