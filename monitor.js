@@ -97,6 +97,9 @@ async function checkStock() {
     }
 }
 
+// Test call so I don't have to wait
+checkStock();
+
 // Timing logic to make stock check on xx:xx:55 and then xx:(xx+1):05
 setTimeout(() => {
 
