@@ -78,8 +78,6 @@ async function checkStock() {
             console.log(`SKU ${sku}: ${maybeAbleToBuy ? 'may be able to buy!' : 'can\'t buy'} (${buttonValue}) @ https://www.bestbuy.com/site/${sku}.p`);
             
             if (maybeAbleToBuy) {
-                console.log(`yoo, ${sku} in stock`);
-
                 const message = {
                     from: EMAIL_SENDER,
                     to: EMAIL_RECIPIENT,
