@@ -123,6 +123,7 @@ function readMonitorData(onComplete) {
 
 // Load in initial data set then make a test stock call
 readMonitorData(() => {
+    console.log('Initial monitor data:')
     console.log(AppState.monitorData);
 
     // Test call so I don't have to wait
@@ -145,11 +146,11 @@ setTimeout(() => {
 
 // Check for new monitor data every 15 seconds
 setInterval(() => {
-    console.log('hello');
     fs.stat(MONITOR_DATA_PATH, (err, stats) => {
         if (err) console.error(err);
         else {
             if (stats.mtime > AppState.lastDataChange) readMonitorData(() => {
+                console.log('New monitor data:')
                 console.log(AppState.monitorData);
             });
         }
