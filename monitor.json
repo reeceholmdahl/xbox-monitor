@@ -27,6 +27,71 @@
             "id": "57",
             "zip": "76015",
             "name": "ARLINGTON"
+        },
+        {
+            "id": "383",
+            "zip": "35242",
+            "name": "BIRMINGHAM"
+        },
+        {
+            "id": "539",
+            "zip": "99515",
+            "name": "ANCHORAGE"
+        },
+        {
+            "id": "1109",
+            "zip": "85392",
+            "name": "AVONDALE"
+        },
+        {
+            "id": "1438",
+            "zip": "72032",
+            "name": "CONWAY"
+        },
+        {
+            "id": "1046",
+            "zip": "94531",
+            "name": "ANTIOCH"
+        },
+        {
+            "id": "217",
+            "zip": "80012",
+            "name": "AURORA"
+        },
+        {
+            "id": "331",
+            "zip": "06810",
+            "name": "DANBURY"
+        },
+        {
+            "id": "482",
+            "zip": "19901",
+            "name": "DOVER"
+        },
+        {
+            "id": "462",
+            "zip": "33625",
+            "name": "TAMPA"
+        },
+        {
+            "id": "896",
+            "zip": "30307",
+            "name": "ATLANTA"
+        },
+        {
+            "id": "763",
+            "zip": "96817",
+            "name": "HONOLULU"
+        },
+        {
+            "id": "526",
+            "zip": "83709",
+            "name": "BOISE"
+        },
+        {
+            "id": "323",
+            "zip": "60642",
+            "name": "CHICAGO"
         }
     ],
     "version": "0.1.4"
